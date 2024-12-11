@@ -237,6 +237,56 @@ footer .questions{
   gap: 23px;
 
 }
+/* Update for FAQ and email error */
+.error-message {
+  color: red;
+  font-size: 12px;
+  display: none;
+  margin-top: 8px;
+}
+
+.faqbox {
+  position: relative;
+}
+
+.faq-answer {
+  color: white;
+  font-size: 16px;
+  display: none;
+  margin-top: 12px;
+}
+
+.faqbox: hover {
+  background-color: #414141;
+}
+
+.hidden {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-buttons {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-buttons.active {
+    display: flex;
+  }
+}
+
 
 @media screen and (max-width:1300px) {
   nav {
